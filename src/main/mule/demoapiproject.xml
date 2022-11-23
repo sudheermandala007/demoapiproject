@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="demoapiprojectFlow" doc:id="62189e54-3447-485d-8865-b6a94425f79c" >
 		<http:listener doc:name="Listener" doc:id="6c741a48-a92f-4e36-b2b1-fe5d2f30f449" config-ref="GETPOSTDEMO" path="/mulesoft" allowedMethods="GET"/>
 		<set-payload value="Successfull" doc:name="Set Payload" doc:id="dc1ecb9f-2bce-4c31-8a07-32f79f365798" />
+		<logger level="INFO" doc:name="Logger" doc:id="e2eb141b-e744-44aa-b7a6-6981a3028e54" message="dummy logger"/>
 	</flow>
 	<flow name="demoapiprojectFlow1" doc:id="4c9672bb-fb69-4774-a7a8-e3e2e0e3234e" >
 		<http:listener doc:name="Listener" doc:id="8f7347a2-8c19-4e71-9e39-8a4f43d82f81" config-ref="GETPOSTDEMO" path="/mulesoft" allowedMethods="POST"/>
